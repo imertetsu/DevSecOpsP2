@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     files: ["**/*.js"],
     languageOptions: {
@@ -17,8 +17,6 @@ export default [
       "no-undef": "off"
     }
   },
-
-  // Configuración para tests con Jest
   {
     files: ["**/__tests__/**/*.js", "**/*.test.js"],
     languageOptions: {

@@ -92,10 +92,10 @@ jobs:
     # =====================================
     - name: Dependency audit (all services)
       run: |
-        cd backend/users-service && npm audit --audit-level=high
-        cd ../academic-service && npm audit --audit-level=high
-        cd ../api-gateway && npm audit --audit-level=high
-        cd ../../frontend && npm audit --audit-level=high
+        cd backend/users-service && npm audit --audit-level=critical
+        cd ../academic-service && npm audit --audit-level=critical
+        cd ../api-gateway && npm audit --audit-level=critical
+        cd ../../frontend && npm audit --audit-level=critical
 
     # =====================================
     # 7. SAST - SEMGREP

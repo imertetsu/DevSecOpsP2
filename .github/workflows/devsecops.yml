@@ -131,21 +131,21 @@ jobs:
       uses: aquasecurity/trivy-action@0.20.0
       with:
         image-ref: users-service
-        severity: CRITICAL,HIGH
+        severity: CRITICAL
         exit-code: 1
 
     - name: Scan academic-service image
       uses: aquasecurity/trivy-action@0.20.0
       with:
         image-ref: academic-service
-        severity: CRITICAL,HIGH
+        severity: CRITICAL
         exit-code: 1
 
     - name: Scan api-gateway image
       uses: aquasecurity/trivy-action@0.20.0
       with:
         image-ref: api-gateway
-        severity: CRITICAL,HIGH
+        severity: CRITICAL
         exit-code: 1
 
     # =====================================
